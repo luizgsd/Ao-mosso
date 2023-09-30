@@ -6,6 +6,7 @@ from PIL import ImageTk, Image
 window = Tk()
 window.title('Ao mosso')
 window.geometry("540x360")
+window.resizable(False, False)
 
 background = ImageTk.PhotoImage(Image.open("img/background.jpg"))
 backgroundLabel = ttk.Label(image=background)
