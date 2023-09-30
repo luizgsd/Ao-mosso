@@ -8,6 +8,9 @@ window.title('Ao mosso')
 window.geometry("540x360")
 window.resizable(False, False)
 
+iconImage = PhotoImage(file="img/icon.png")
+window.iconphoto(False, iconImage)
+
 background = ImageTk.PhotoImage(Image.open("img/background.jpg"))
 backgroundLabel = ttk.Label(image=background)
 backgroundLabel.place(relx=0.5, rely=0.5, anchor=CENTER)
